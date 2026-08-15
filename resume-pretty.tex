@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper,margin=0.58in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage[semibold]{sourcesanspro}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+
+\DeclareUnicodeCharacter{00B5}{\textmu}
+
+\definecolor{accent}{HTML}{0F5C63}
+\definecolor{text}{HTML}{1C2430}
+\definecolor{muted}{HTML}{5F6B76}
+\definecolor{rule}{HTML}{D6DDE3}
+
+\newcommand{\accentword}[1]{\textcolor{accent}{\textbf{#1}}}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfborder={0 0 0}
+}
+\urlstyle{same}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\spaceskip=0.36em plus 0.12em minus 0.06em
+\xspaceskip=0.52em
+\color{text}
+
+\setlist[itemize]{
+  leftmargin=1.25em,
+  topsep=3pt,
+  itemsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+\renewcommand{\labelitemi}{\textcolor{accent}{\raisebox{0.15ex}{\scriptsize\textbullet}}}
+
+\titleformat{\section}
+  {\centering\Huge\sffamily\bfseries\color{text}}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\section}{0pt}{0pt}{4pt}
+
+\titleformat{\subsection}
+  {\needspace{4\baselineskip}\Large\sffamily\bfseries\color{accent}}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}\color{rule}\titlerule]
+
+\titlespacing*{\subsection}{0pt}{13pt}{5pt}
+
+\titleformat{\subsubsection}
+  {\needspace{3\baselineskip}\normalsize\sffamily\bfseries\color{text}}
+  {}
+  {0pt}
+  {}
+
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
+}
+
+\begin{document}
+$body$
+\end{document}
