@@ -2,7 +2,7 @@
 
 This repository keeps the résumé content in one source file and produces three public formats:
 
-- Website: <https://trans.github.io/resume/>
+- Website: <https://7r4n5.top/resume/>
 - PDF: `Thomas-Sawyer-Resume.pdf`
 - Word: `resume.docx`
 
