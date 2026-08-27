@@ -11,3 +11,6 @@ resume-body.tex
 
 # Codex workspace state
 .codex
+
+# Local GitHub Pages staging directory
+_site/
